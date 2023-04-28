@@ -7,7 +7,7 @@ import java.io.BufferedReader;
 import java.io.FileReader;
 import java.util.List;
 
-class RPNStacker {
+class Main {
   public static int calculate(Token token, Integer a, Integer b) {
     if (token.type == TokenType.PLUS) {
       return a + b;
@@ -61,7 +61,7 @@ class RPNStacker {
   public static void main(String[] args) {
     try {
       List<Token> tokens = new ArrayList<Token>();
-      BufferedReader bf = new BufferedReader(new FileReader("./utils/Calc.stk"));
+      BufferedReader bf = new BufferedReader(new FileReader("./utils/Calc2.stk"));
       String line = bf.readLine();
 
       while (line != null) {
