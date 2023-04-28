@@ -61,7 +61,7 @@ class RPNStacker {
   public static void main(String[] args) {
     try {
       List<Token> tokens = new ArrayList<Token>();
-      BufferedReader bf = new BufferedReader(new FileReader("./utils/Calc2.stk"));
+      BufferedReader bf = new BufferedReader(new FileReader("./utils/Calc.stk"));
       String line = bf.readLine();
 
       while (line != null) {
